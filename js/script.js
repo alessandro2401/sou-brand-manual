@@ -227,3 +227,109 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('✅ Manual da Marca SOU Portal carregado com sucesso!');
 });
+
+// ===================================
+// Função de Download de Arquivos
+// ===================================
+
+/**
+ * Faz download de um arquivo
+ * @param {string} filepath - Caminho do arquivo
+ * @param {string} filename - Nome do arquivo para download
+ */
+function downloadFile(filepath, filename) {
+    // Criar elemento <a> temporário
+    const link = document.createElement('a');
+    link.href = filepath;
+    link.download = filename;
+    link.style.display = 'none';
+    
+    // Adicionar ao DOM, clicar e remover
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Feedback visual
+    console.log(`✅ Download iniciado: ${filename}`);
+    
+    // Opcional: Mostrar toast de sucesso
+    showDownloadToast(filename);
+}
+
+/**
+ * Mostra toast de confirmação de download
+ * @param {string} filename - Nome do arquivo baixado
+ */
+function showDownloadToast(filename) {
+    // Criar elemento de toast
+    const toast = document.createElement('div');
+    toast.className = 'download-toast';
+    toast.innerHTML = `
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span>Download iniciado: ${filename}</span>
+    `;
+    
+    // Estilos inline
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: var(--verde, #10B981);
+        color: white;
+        padding: 16px 24px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
+        animation: slideIn 0.3s ease;
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+    `;
+    
+    // Adicionar ao DOM
+    document.body.appendChild(toast);
+    
+    // Remover após 3 segundos
+    setTimeout(() => {
+        toast.style.animation = 'slideOut 0.3s ease';
+        setTimeout(() => {
+            document.body.removeChild(toast);
+        }, 300);
+    }, 3000);
+}
+
+// Adicionar animações CSS dinamicamente
+if (!document.querySelector('#download-animations')) {
+    const style = document.createElement('style');
+    style.id = 'download-animations';
+    style.textContent = `
+        @keyframes slideIn {
+            from {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideOut {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(400px);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}

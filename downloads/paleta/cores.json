@@ -1,0 +1,82 @@
+{
+  "paleta": {
+    "nome": "SOU Portal - Paleta Oficial",
+    "versao": "2.0",
+    "data": "Dezembro 2025",
+    "cores": {
+      "primarias": [
+        {
+          "nome": "Azul Institucional",
+          "uso": "Cor principal da marca, botões primários, títulos",
+          "hex": "#0056B3",
+          "rgb": {"r": 0, "g": 86, "b": 179},
+          "cmyk": {"c": 100, "m": 52, "y": 0, "k": 30},
+          "pantone": "PMS 293 C"
+        },
+        {
+          "nome": "Azul Escuro",
+          "uso": "Hover, estados ativos, textos de destaque",
+          "hex": "#004494",
+          "rgb": {"r": 0, "g": 68, "b": 148},
+          "cmyk": {"c": 100, "m": 54, "y": 0, "k": 42},
+          "pantone": "PMS 294 C"
+        }
+      ],
+      "neutras": [
+        {
+          "nome": "Branco",
+          "uso": "Fundos principais, textos em fundos escuros",
+          "hex": "#FFFFFF",
+          "rgb": {"r": 255, "g": 255, "b": 255},
+          "cmyk": {"c": 0, "m": 0, "y": 0, "k": 0}
+        },
+        {
+          "nome": "Cinza Claro",
+          "uso": "Fundos secundários, cards, separadores",
+          "hex": "#F5F5F5",
+          "rgb": {"r": 245, "g": 245, "b": 245},
+          "cmyk": {"c": 0, "m": 0, "y": 0, "k": 4}
+        },
+        {
+          "nome": "Preto",
+          "uso": "Textos principais, títulos, ícones",
+          "hex": "#1A1A1A",
+          "rgb": {"r": 26, "g": 26, "b": 26},
+          "cmyk": {"c": 0, "m": 0, "y": 0, "k": 90}
+        }
+      ],
+      "secundarias": [
+        {
+          "nome": "Azul Suave",
+          "uso": "Destaques, backgrounds de informação",
+          "hex": "#E0E7FF",
+          "rgb": {"r": 224, "g": 231, "b": 255},
+          "cmyk": {"c": 12, "m": 9, "y": 0, "k": 0}
+        }
+      ],
+      "status": [
+        {
+          "nome": "Verde",
+          "uso": "Sucesso, confirmações, status positivo",
+          "hex": "#10B981",
+          "rgb": {"r": 16, "g": 185, "b": 129},
+          "cmyk": {"c": 91, "m": 0, "y": 30, "k": 27}
+        },
+        {
+          "nome": "Amarelo",
+          "uso": "Avisos, atenção, alertas moderados",
+          "hex": "#F59E0B",
+          "rgb": {"r": 245, "g": 158, "b": 11},
+          "cmyk": {"c": 0, "m": 36, "y": 96, "k": 4}
+        },
+        {
+          "nome": "Vermelho",
+          "uso": "Erros, alertas críticos, ações destrutivas",
+          "hex": "#DC2626",
+          "rgb": {"r": 220, "g": 38, "b": 38},
+          "cmyk": {"c": 0, "m": 83, "y": 83, "k": 14}
+        }
+      ]
+    }
+  }
+}

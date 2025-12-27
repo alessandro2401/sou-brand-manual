@@ -1,0 +1,88 @@
+/**
+ * SOU Portal - Paleta de Cores Oficial
+ * Sistema de Organização Unificada
+ * Versão 2.0 - Dezembro 2025
+ */
+
+:root {
+  /* ========================================
+     CORES PRIMÁRIAS
+     ======================================== */
+  
+  /* Azul Institucional - Cor principal da marca */
+  --azul-institucional: #0056B3;
+  --azul-institucional-rgb: 0, 86, 179;
+  --azul-institucional-hover: #004494;
+  
+  /* Azul Escuro - Para hover e estados ativos */
+  --azul-escuro: #004494;
+  --azul-escuro-rgb: 0, 68, 148;
+  
+  /* ========================================
+     CORES NEUTRAS
+     ======================================== */
+  
+  /* Branco - Fundos e textos em fundos escuros */
+  --branco: #FFFFFF;
+  --branco-rgb: 255, 255, 255;
+  
+  /* Cinza Claro - Fundos secundários */
+  --cinza-claro: #F5F5F5;
+  --cinza-claro-rgb: 245, 245, 245;
+  
+  /* Preto - Textos principais */
+  --preto: #1A1A1A;
+  --preto-rgb: 26, 26, 26;
+  
+  /* ========================================
+     CORES SECUNDÁRIAS
+     ======================================== */
+  
+  /* Azul Suave - Destaques e backgrounds */
+  --azul-suave: #E0E7FF;
+  --azul-suave-rgb: 224, 231, 255;
+  
+  /* ========================================
+     CORES DE STATUS
+     ======================================== */
+  
+  /* Verde - Sucesso, confirmações */
+  --verde: #10B981;
+  --verde-rgb: 16, 185, 129;
+  
+  /* Amarelo - Avisos, atenção */
+  --amarelo: #F59E0B;
+  --amarelo-rgb: 245, 158, 11;
+  
+  /* Vermelho - Erros, alertas críticos */
+  --vermelho: #DC2626;
+  --vermelho-rgb: 220, 38, 38;
+}
+
+/* ========================================
+   CLASSES UTILITÁRIAS
+   ======================================== */
+
+/* Cores de Texto */
+.text-azul-institucional { color: var(--azul-institucional); }
+.text-azul-escuro { color: var(--azul-escuro); }
+.text-branco { color: var(--branco); }
+.text-preto { color: var(--preto); }
+.text-verde { color: var(--verde); }
+.text-amarelo { color: var(--amarelo); }
+.text-vermelho { color: var(--vermelho); }
+
+/* Cores de Fundo */
+.bg-azul-institucional { background-color: var(--azul-institucional); }
+.bg-azul-escuro { background-color: var(--azul-escuro); }
+.bg-branco { background-color: var(--branco); }
+.bg-cinza-claro { background-color: var(--cinza-claro); }
+.bg-azul-suave { background-color: var(--azul-suave); }
+.bg-verde { background-color: var(--verde); }
+.bg-amarelo { background-color: var(--amarelo); }
+.bg-vermelho { background-color: var(--vermelho); }
+
+/* Cores de Borda */
+.border-azul-institucional { border-color: var(--azul-institucional); }
+.border-azul-escuro { border-color: var(--azul-escuro); }
+.border-cinza-claro { border-color: var(--cinza-claro); }
