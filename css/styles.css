@@ -850,3 +850,209 @@ body {
 .mb-2 { margin-bottom: var(--spacing-md); }
 .mb-3 { margin-bottom: var(--spacing-lg); }
 .mb-4 { margin-bottom: var(--spacing-xl); }
+
+/* ===================================
+   Novos Componentes — v3.0
+   =================================== */
+
+/* Hero Version Badge */
+.hero-version-badge {
+    display: inline-block;
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.5px;
+}
+
+/* Update Banner */
+.update-banner {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--azul-claro);
+    border: 1px solid #C7D7F5;
+    border-left: 4px solid var(--azul-institucional);
+    border-radius: 8px;
+    margin-top: var(--spacing-xl);
+}
+
+.update-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--azul-institucional);
+    color: var(--branco);
+    border-radius: 50%;
+}
+
+.update-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--preto-suave);
+}
+
+/* Protection Area */
+.protection-area-demo {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-2xl);
+    background: repeating-linear-gradient(
+        45deg,
+        #f0f4ff,
+        #f0f4ff 10px,
+        #ffffff 10px,
+        #ffffff 20px
+    );
+    border: 2px dashed #C7D7F5;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.protection-inner {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.protection-label {
+    font-size: 13px;
+    color: var(--azul-institucional);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Sizes Grid */
+.sizes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.size-card {
+    background: var(--branco);
+    border: 1px solid var(--cinza-medio);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.size-preview {
+    background: var(--cinza-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    padding: var(--spacing-lg);
+}
+
+.size-label {
+    padding: var(--spacing-md);
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    border-top: 1px solid var(--cinza-medio);
+}
+
+/* Typography Anatomy */
+.typography-anatomy {
+    display: flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+    flex-wrap: wrap;
+}
+
+.anatomy-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    flex: 1;
+    min-width: 200px;
+    padding: var(--spacing-lg);
+    background: var(--branco);
+    border: 1px solid var(--cinza-medio);
+    border-radius: 8px;
+}
+
+.anatomy-letter {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-family);
+}
+
+.anatomy-info {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--preto-suave);
+}
+
+/* Palette Image Showcase */
+.palette-image-showcase {
+    margin: var(--spacing-xl) 0;
+}
+
+/* Mockup Showcase */
+.mockup-showcase {
+    margin: var(--spacing-xl) 0;
+}
+
+.mockup-image {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--cinza-medio);
+}
+
+/* Don't Grid (usos incorretos) */
+.dont-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.dont-card {
+    text-align: center;
+}
+
+.dont-preview {
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+}
+
+.dont-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--vermelho);
+}
+
+/* Azul Navy — nova variável */
+:root {
+    --azul-navy: #0D1F3C;
+}
+
+/* Responsive additions */
+@media (max-width: 768px) {
+    .typography-anatomy {
+        flex-direction: column;
+    }
+    .sizes-grid,
+    .dont-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .update-banner {
+        flex-direction: column;
+    }
+}

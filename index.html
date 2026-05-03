@@ -3,509 +3,480 @@
 <head>
 <!-- no-manus-badge -->
 <style>
-/* Bloqueia o badge "Made with Manus" */
 [data-manus],[id*="manus-badge"],[id*="manus-widget"],[class*="manus-badge"],[class*="manus-widget"],[class*="manus-branding"],a[href*="manus.im"],a[href*="manus.space"]{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;width:0!important;height:0!important;overflow:hidden!important;position:absolute!important;left:-9999px!important;}
 </style>
 <script>
-/* Bloqueia o badge "Made with Manus" */
 (function(){var s=['[data-manus]','[id*="manus-badge"]','[id*="manus-widget"]','[class*="manus-badge"]','[class*="manus-widget"]','[class*="manus-branding"]','a[href*="manus.im"]','a[href*="manus.space"]'];function r(){s.forEach(function(q){try{document.querySelectorAll(q).forEach(function(e){e.remove()});}catch(e){}});document.querySelectorAll('*').forEach(function(e){try{if(!e.children.length&&e.textContent&&e.textContent.trim().toLowerCase().includes('made with manus')){var p=e.closest('[style*="position: fixed"],[style*="position:fixed"],[style*="z-index"]')||e.parentElement;if(p&&p!==document.body)p.remove();else e.remove();}}catch(e){}});}if(window.MutationObserver){var o=new MutationObserver(function(m){m.forEach(function(x){if(x.addedNodes.length)r();});});o.observe(document.documentElement,{childList:true,subtree:true});}var c=0,i=setInterval(function(){r();if(++c>=20)clearInterval(i);},500);if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',r);}else{r();}window.addEventListener('load',function(){setTimeout(r,200);setTimeout(r,1000);setTimeout(r,3000);});})();
 </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual da Marca - SOU Portal</title>
-    <meta name="description" content="Manual de identidade visual do SOU Portal - Sistema de Organização Unificada">
-    
-    <!-- Favicon -->
+    <title>Manual da Marca — SOU Portal v3.0</title>
+    <meta name="description" content="Manual de identidade visual do SOU Portal - Sistema de Organização Unificado — Versão 3.0">
+
     <link rel="icon" href="assets/logo_sou_v2.png" type="image/png">
-    
-    <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Sidebar Navigation -->
+
+    <!-- ── Sidebar ─────────────────────────────────────────── -->
     <aside class="sidebar">
         <div class="sidebar-header">
             <h1 class="sidebar-title">Manual da Marca</h1>
-            <p class="sidebar-subtitle">Identidade Visual</p>
+            <p class="sidebar-subtitle">Identidade Visual · v3.0</p>
         </div>
-        
+
         <nav class="sidebar-nav">
-            <a href="#logo-principal" class="nav-item active" data-section="logo-principal">
-                <span class="nav-text">Logo Principal</span>
-                <span class="nav-badge">1</span>
+            <a href="#logo-principal"  class="nav-item active" data-section="logo-principal">
+                <span class="nav-text">Logo Principal</span><span class="nav-badge">1</span>
             </a>
-            <a href="#conceito" class="nav-item" data-section="conceito">
-                <span class="nav-text">Conceito do Design</span>
-                <span class="nav-badge">2</span>
+            <a href="#conceito"        class="nav-item" data-section="conceito">
+                <span class="nav-text">Conceito do Design</span><span class="nav-badge">2</span>
             </a>
-            <a href="#valores" class="nav-item" data-section="valores">
-                <span class="nav-text">Valores</span>
-                <span class="nav-badge">3</span>
+            <a href="#valores"         class="nav-item" data-section="valores">
+                <span class="nav-text">Valores</span><span class="nav-badge">3</span>
             </a>
-            <a href="#paleta" class="nav-item" data-section="paleta">
-                <span class="nav-text">Paleta de Cores</span>
-                <span class="nav-badge">4</span>
+            <a href="#paleta"          class="nav-item" data-section="paleta">
+                <span class="nav-text">Paleta de Cores</span><span class="nav-badge">4</span>
             </a>
-            <a href="#tipografia" class="nav-item" data-section="tipografia">
-                <span class="nav-text">Tipografia</span>
-                <span class="nav-badge">5</span>
+            <a href="#tipografia"      class="nav-item" data-section="tipografia">
+                <span class="nav-text">Tipografia</span><span class="nav-badge">5</span>
             </a>
-            <a href="#tom-de-voz" class="nav-item" data-section="tom-de-voz">
-                <span class="nav-text">Tom de Voz</span>
-                <span class="nav-badge">6</span>
+            <a href="#tom-de-voz"      class="nav-item" data-section="tom-de-voz">
+                <span class="nav-text">Tom de Voz</span><span class="nav-badge">6</span>
             </a>
-            <a href="#variacoes" class="nav-item" data-section="variacoes">
-                <span class="nav-text">Variações e Aplicações</span>
-                <span class="nav-badge">7</span>
+            <a href="#variacoes"       class="nav-item" data-section="variacoes">
+                <span class="nav-text">Variações e Aplicações</span><span class="nav-badge">7</span>
             </a>
-            <a href="#downloads" class="nav-item" data-section="downloads">
-                <span class="nav-text">Downloads</span>
-                <span class="nav-badge">8</span>
+            <a href="#downloads"       class="nav-item" data-section="downloads">
+                <span class="nav-text">Downloads</span><span class="nav-badge">8</span>
             </a>
         </nav>
-        
+
         <div class="sidebar-footer">
             <p class="footer-text">© 2025 Administradora Mutual</p>
-            <p class="footer-version">Versão 2.0</p>
+            <p class="footer-version">Versão 3.0</p>
         </div>
     </aside>
 
-    <!-- Main Content -->
+    <!-- ── Main Content ───────────────────────────────────── -->
     <main class="main-content">
-        <!-- Hero Section -->
+
+        <!-- Hero -->
         <section class="hero-section">
             <div class="hero-badge">SOU Portal</div>
-            <h2 class="hero-title">Sistema de Organização Unificada</h2>
+            <h2 class="hero-title">Sistema de Organização Unificado</h2>
             <p class="hero-description">
                 Central unificada de documentação, contratos e acompanhamento técnico do desenvolvimento do CRM da Administradora Mutual.
             </p>
+            <div class="hero-version-badge">Versão 3.0 — Logo Atualizado</div>
         </section>
 
-        <!-- Section 1: Logo Principal -->
+        <!-- ── 1. Logo Principal ──────────────────────────── -->
         <section id="logo-principal" class="content-section">
             <h2 class="section-title">Logo Principal</h2>
-            
+
             <div class="logo-showcase">
-                <img src="assets/logo_correct.png" alt="Logo SOU Portal - Quadrados Concêntricos" class="logo-image-large">
+                <img src="assets/logo_principal_v3.png" alt="Logo SOU Portal v3.0" class="logo-image-large">
             </div>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    O logotipo do SOU Portal é composto por dois elementos integrados: o <strong>símbolo gráfico</strong> (quadrados concêntricos) e a <strong>tipografia</strong> (nome "SOU Portal" com tagline).
+                    O logotipo do <strong>SOU Portal v3.0</strong> é composto por dois elementos integrados: o <strong>símbolo gráfico</strong> (quadrados concêntricos) e a <strong>tipografia personalizada</strong> com as letras "SOU" em estilo display arredondado e a tagline "Sistema de organização unificado".
                 </p>
                 <p class="content-text">
-                    O símbolo apresenta três quadrados concêntricos em azul institucional (#0056B3) e branco, criando uma composição geométrica precisa que simboliza camadas de organização convergindo para um núcleo central.
+                    A tipografia foi atualizada na versão 3.0 para utilizar letras com <strong>traços arredondados e espessura uniforme</strong>, conferindo ao logotipo maior modernidade e personalidade. As letras "S" e "U" utilizam <strong>Azul Navy (#0D1F3C)</strong>, enquanto o "O" central destaca-se em <strong>Azul Institucional (#0056B3)</strong>, criando contraste visual e hierarquia.
                 </p>
+            </div>
+
+            <div class="update-banner">
+                <div class="update-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+                    </svg>
+                </div>
+                <div class="update-content">
+                    <strong>Novidade na v3.0:</strong> A tipografia do logotipo foi redesenhada com letras display arredondadas, mantendo o ícone dos quadrados concêntricos como símbolo oficial da marca.
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Área de Proteção</h3>
+            <div class="content-card">
+                <p class="content-text">
+                    A área de proteção do logotipo corresponde à altura da letra "O" em todas as direções. Nenhum elemento gráfico, texto ou imagem deve invadir essa área mínima de respiro ao redor do logotipo.
+                </p>
+                <div class="protection-area-demo">
+                    <div class="protection-inner">
+                        <img src="assets/logo_principal_v3.png" alt="Logo SOU com área de proteção" style="max-width:340px;width:100%;opacity:1;">
+                    </div>
+                    <p class="protection-label">Área mínima de proteção = altura da letra "O"</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Tamanho Mínimo</h3>
+            <div class="sizes-grid">
+                <div class="size-card">
+                    <div class="size-preview" style="padding: 12px;">
+                        <img src="assets/logo_principal_v3.png" alt="Logo 200px" style="width:200px;height:auto;">
+                    </div>
+                    <p class="size-label">200px — Digital (recomendado)</p>
+                </div>
+                <div class="size-card">
+                    <div class="size-preview" style="padding: 12px;">
+                        <img src="assets/logo_principal_v3.png" alt="Logo 120px" style="width:120px;height:auto;">
+                    </div>
+                    <p class="size-label">120px — Mínimo digital</p>
+                </div>
+                <div class="size-card">
+                    <div class="size-preview" style="padding: 12px;">
+                        <img src="assets/logo_principal_v3.png" alt="Logo 40mm" style="width:80px;height:auto;">
+                    </div>
+                    <p class="size-label">40mm — Mínimo impresso</p>
+                </div>
             </div>
         </section>
 
-        <!-- Section 2: Conceito do Design -->
+        <!-- ── 2. Conceito do Design ──────────────────────── -->
         <section id="conceito" class="content-section">
             <h2 class="section-title">Conceito do Design</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    O logo do SOU Portal foi desenvolvido para representar os três pilares fundamentais do sistema: <strong>Unificação</strong>, <strong>Organização</strong> e <strong>Núcleo Central</strong>.
+                    O logo do SOU Portal foi desenvolvido para representar os três pilares fundamentais do sistema: <strong>Unificação</strong>, <strong>Organização</strong> e <strong>Núcleo Central</strong>. O símbolo dos quadrados concêntricos traduz visualmente a essência do sistema — camadas de informação convergindo para um ponto central de controle.
                 </p>
             </div>
 
-            <h3 class="subsection-title">Simbolismo</h3>
-            
+            <h3 class="subsection-title">Simbolismo do Ícone</h3>
             <div class="symbolism-showcase">
-                <img src="assets/symbolism_correct.png" alt="Simbolismo do Logo SOU" class="symbolism-image">
+                <img src="assets/symbolism_v3.png" alt="Simbolismo do Logo SOU" class="symbolism-image">
             </div>
-            
+
             <div class="symbolism-grid">
                 <div class="symbolism-card">
-                    <div class="symbolism-icon" style="background: #0056B3;"></div>
+                    <div class="symbolism-icon" style="background:#0056B3;"></div>
                     <h4 class="symbolism-title">Unificação</h4>
-                    <p class="symbolism-text">
-                        O quadrado externo representa o container que reúne todos os elementos dispersos em um único sistema integrado.
-                    </p>
+                    <p class="symbolism-text">O quadrado externo representa o container que reúne todos os elementos dispersos em um único sistema integrado.</p>
                 </div>
-                
                 <div class="symbolism-card">
-                    <div class="symbolism-icon" style="background: #FFFFFF; border: 3px solid #0056B3;"></div>
+                    <div class="symbolism-icon" style="background:#FFFFFF;border:3px solid #0056B3;"></div>
                     <h4 class="symbolism-title">Organização</h4>
-                    <p class="symbolism-text">
-                        A moldura branca simboliza a estrutura que separa, categoriza e hierarquiza informações de forma lógica.
-                    </p>
+                    <p class="symbolism-text">A moldura branca simboliza a estrutura que separa, categoriza e hierarquiza informações de forma lógica.</p>
                 </div>
-                
                 <div class="symbolism-card">
-                    <div class="symbolism-icon" style="background: #0056B3;"></div>
+                    <div class="symbolism-icon" style="background:#0056B3;"></div>
                     <h4 class="symbolism-title">Núcleo Central</h4>
-                    <p class="symbolism-text">
-                        O quadrado interno representa o coração do sistema onde toda informação crítica converge.
-                    </p>
+                    <p class="symbolism-text">O quadrado interno representa o coração do sistema onde toda informação crítica converge.</p>
                 </div>
             </div>
 
-            <h3 class="subsection-title">Tipografia</h3>
+            <h3 class="subsection-title">Anatomia da Tipografia</h3>
             <div class="content-card">
                 <p class="content-text">
-                    A fonte utiliza tipografia sans-serif moderna em negrito para "SOU Portal" e regular para o tagline "Sistema de Organização Unificada", transmitindo profissionalismo e clareza.
+                    A tipografia do logotipo v3.0 utiliza letras display com <strong>terminais completamente arredondados</strong> e <strong>espessura de traço uniforme</strong>. Essa escolha transmite modernidade, acessibilidade e confiança — valores centrais do SOU Portal.
                 </p>
+                <div class="typography-anatomy">
+                    <div class="anatomy-item">
+                        <div class="anatomy-letter" style="color:#0D1F3C;">S</div>
+                        <div class="anatomy-info">
+                            <strong>Letra S</strong><br>
+                            Azul Navy #0D1F3C<br>
+                            Traços arredondados
+                        </div>
+                    </div>
+                    <div class="anatomy-item">
+                        <div class="anatomy-letter" style="color:#0056B3;">O</div>
+                        <div class="anatomy-info">
+                            <strong>Letra O</strong><br>
+                            Azul Institucional #0056B3<br>
+                            Destaque e identidade
+                        </div>
+                    </div>
+                    <div class="anatomy-item">
+                        <div class="anatomy-letter" style="color:#0D1F3C;">U</div>
+                        <div class="anatomy-info">
+                            <strong>Letra U</strong><br>
+                            Azul Navy #0D1F3C<br>
+                            Base arredondada
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Section 3: Valores -->
+        <!-- ── 3. Valores ─────────────────────────────────── -->
         <section id="valores" class="content-section">
             <h2 class="section-title">Valores</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    O SOU Portal se baseia em cinco valores fundamentais que guiam todas as operações e estratégias:
+                    Os valores do SOU Portal guiam todas as decisões de design, comunicação e desenvolvimento. Cada elemento visual foi concebido para refletir esses princípios fundamentais.
                 </p>
             </div>
 
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-number">01</div>
+                    <span class="value-number">01</span>
                     <h3 class="value-title">Unificação</h3>
-                    <p class="value-description">
-                        Centralização de informações dispersas em um único local acessível, eliminando fragmentação de documentos e dados.
-                    </p>
+                    <p class="value-description">Centralizar informações dispersas em uma única plataforma coesa, eliminando redundâncias e fragmentações operacionais.</p>
                 </div>
-
                 <div class="value-card">
-                    <div class="value-number">02</div>
+                    <span class="value-number">02</span>
                     <h3 class="value-title">Organização</h3>
-                    <p class="value-description">
-                        Estrutura hierárquica clara com versionamento de documentos e categorização lógica, transformando caos em ordem.
-                    </p>
+                    <p class="value-description">Estruturar dados, documentos e processos de forma hierárquica e lógica, facilitando o acesso e a compreensão.</p>
                 </div>
-
                 <div class="value-card">
-                    <div class="value-number">03</div>
+                    <span class="value-number">03</span>
                     <h3 class="value-title">Transparência</h3>
-                    <p class="value-description">
-                        Visibilidade completa do status do projeto, cronogramas e arquitetura técnica para todos os stakeholders.
-                    </p>
+                    <p class="value-description">Garantir visibilidade total sobre o andamento de projetos, contratos e cronogramas para todos os envolvidos.</p>
                 </div>
-
                 <div class="value-card">
-                    <div class="value-number">04</div>
-                    <h3 class="value-title">Segurança Jurídica</h3>
-                    <p class="value-description">
-                        Gestão profissional de contratos com versionamento, análise jurídica e termos de proteção documentados.
-                    </p>
+                    <span class="value-number">04</span>
+                    <h3 class="value-title">Confiabilidade</h3>
+                    <p class="value-description">Oferecer um sistema estável, seguro e auditável, onde cada informação possui rastreabilidade e integridade garantidas.</p>
                 </div>
-
                 <div class="value-card">
-                    <div class="value-number">05</div>
-                    <h3 class="value-title">Acompanhamento Técnico</h3>
-                    <p class="value-description">
-                        Gantt charts, diagramas de arquitetura e documentação técnica detalhada para acompanhamento preciso.
-                    </p>
+                    <span class="value-number">05</span>
+                    <h3 class="value-title">Eficiência</h3>
+                    <p class="value-description">Reduzir o tempo gasto em tarefas administrativas repetitivas, liberando equipes para atividades de maior valor estratégico.</p>
+                </div>
+                <div class="value-card">
+                    <span class="value-number">06</span>
+                    <h3 class="value-title">Acessibilidade</h3>
+                    <p class="value-description">Tornar a informação acessível a todos os perfis de usuário, independentemente do nível de familiaridade tecnológica.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Paleta de Cores -->
+        <!-- ── 4. Paleta de Cores ──────────────────────────── -->
         <section id="paleta" class="content-section">
             <h2 class="section-title">Paleta de Cores</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    A paleta de cores foi escolhida para transmitir confiança, profissionalismo e clareza organizacional.
+                    A paleta de cores do SOU Portal v3.0 foi atualizada para incluir o <strong>Azul Navy (#0D1F3C)</strong>, cor utilizada nas letras "S" e "U" do logotipo atualizado. As demais cores mantêm continuidade com a versão anterior, garantindo consistência em toda a aplicação.
                 </p>
             </div>
 
+            <div class="palette-image-showcase">
+                <img src="assets/color_palette_v3.png" alt="Paleta de Cores SOU v3.0" style="width:100%;border-radius:8px;border:1px solid #E5E5E5;">
+            </div>
+
             <h3 class="subsection-title">Cores Primárias</h3>
-            
             <div class="colors-grid">
                 <div class="color-card">
-                    <div class="color-preview" style="background: #0056B3;"></div>
-                    <h4 class="color-name">Azul Institucional</h4>
+                    <div class="color-preview" style="background:#0056B3;"></div>
+                    <p class="color-name">Azul Institucional</p>
                     <p class="color-hex">#0056B3</p>
                     <p class="color-rgb">RGB: 0, 86, 179</p>
-                    <p class="color-usage"><strong>Uso:</strong> Logotipo, botões primários, links, elementos de destaque</p>
+                    <p class="color-usage">Ícone do logo, letra "O", botões primários, links e destaques.</p>
                 </div>
-
                 <div class="color-card">
-                    <div class="color-preview" style="background: #004494;"></div>
-                    <h4 class="color-name">Azul Escuro</h4>
+                    <div class="color-preview" style="background:#0D1F3C;"></div>
+                    <p class="color-name">Azul Navy</p>
+                    <p class="color-hex">#0D1F3C</p>
+                    <p class="color-rgb">RGB: 13, 31, 60</p>
+                    <p class="color-usage">Letras "S" e "U" do logotipo. Novo na v3.0.</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-preview" style="background:#004494;"></div>
+                    <p class="color-name">Azul Escuro</p>
                     <p class="color-hex">#004494</p>
                     <p class="color-rgb">RGB: 0, 68, 148</p>
-                    <p class="color-usage"><strong>Uso:</strong> Sidebar, cabeçalhos, elementos de hierarquia</p>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-preview" style="background: #FFFFFF; border: 1px solid #E5E5E5;"></div>
-                    <h4 class="color-name">Branco</h4>
-                    <p class="color-hex">#FFFFFF</p>
-                    <p class="color-rgb">RGB: 255, 255, 255</p>
-                    <p class="color-usage"><strong>Uso:</strong> Fundos de cards, texto em fundos escuros</p>
+                    <p class="color-usage">Sidebar, cabeçalhos, fundos de seções de destaque.</p>
                 </div>
             </div>
 
-            <h3 class="subsection-title">Cores Secundárias</h3>
-            
+            <h3 class="subsection-title">Cores Neutras e de Suporte</h3>
             <div class="colors-grid">
                 <div class="color-card">
-                    <div class="color-preview" style="background: #F5F5F5;"></div>
-                    <h4 class="color-name">Cinza Claro</h4>
+                    <div class="color-preview" style="background:#FFFFFF;border:1px solid #E5E5E5;"></div>
+                    <p class="color-name">Branco</p>
+                    <p class="color-hex">#FFFFFF</p>
+                    <p class="color-rgb">RGB: 255, 255, 255</p>
+                    <p class="color-usage">Fundos de cards, texto em fundos escuros, espaço negativo do ícone.</p>
+                </div>
+                <div class="color-card">
+                    <div class="color-preview" style="background:#F5F5F5;border:1px solid #E5E5E5;"></div>
+                    <p class="color-name">Cinza Claro</p>
                     <p class="color-hex">#F5F5F5</p>
-                    <p class="color-usage"><strong>Uso:</strong> Fundo geral da aplicação</p>
+                    <p class="color-rgb">RGB: 245, 245, 245</p>
+                    <p class="color-usage">Fundo geral da aplicação, cards secundários.</p>
                 </div>
-
                 <div class="color-card">
-                    <div class="color-preview" style="background: #1A1A1A;"></div>
-                    <h4 class="color-name">Preto Suave</h4>
+                    <div class="color-preview" style="background:#1A1A1A;"></div>
+                    <p class="color-name">Preto Suave</p>
                     <p class="color-hex">#1A1A1A</p>
-                    <p class="color-usage"><strong>Uso:</strong> Textos principais, títulos</p>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-preview" style="background: #E0E7FF;"></div>
-                    <h4 class="color-name">Azul Claro</h4>
-                    <p class="color-hex">#E0E7FF</p>
-                    <p class="color-usage"><strong>Uso:</strong> Destaques, hover states</p>
+                    <p class="color-rgb">RGB: 26, 26, 26</p>
+                    <p class="color-usage">Textos principais, títulos, corpo de texto.</p>
                 </div>
             </div>
 
             <h3 class="subsection-title">Cores de Status</h3>
-            
             <div class="colors-grid">
                 <div class="color-card">
-                    <div class="color-preview" style="background: #10B981;"></div>
-                    <h4 class="color-name">Verde (Sucesso)</h4>
+                    <div class="color-preview" style="background:#10B981;"></div>
+                    <p class="color-name">Verde Sucesso</p>
                     <p class="color-hex">#10B981</p>
-                    <p class="color-usage"><strong>Uso:</strong> Status "Ativa", "Aprovado", "Vigente"</p>
+                    <p class="color-rgb">RGB: 16, 185, 129</p>
+                    <p class="color-usage">Confirmações, status ativo, conclusão de etapas.</p>
                 </div>
-
                 <div class="color-card">
-                    <div class="color-preview" style="background: #F59E0B;"></div>
-                    <h4 class="color-name">Laranja (Atenção)</h4>
+                    <div class="color-preview" style="background:#F59E0B;"></div>
+                    <p class="color-name">Amarelo Atenção</p>
                     <p class="color-hex">#F59E0B</p>
-                    <p class="color-usage"><strong>Uso:</strong> Status "Em Análise", "Pendente"</p>
+                    <p class="color-rgb">RGB: 245, 158, 11</p>
+                    <p class="color-usage">Alertas, pendências, itens que requerem atenção.</p>
                 </div>
-
                 <div class="color-card">
-                    <div class="color-preview" style="background: #DC2626;"></div>
-                    <h4 class="color-name">Vermelho (Erro)</h4>
+                    <div class="color-preview" style="background:#DC2626;"></div>
+                    <p class="color-name">Vermelho Erro</p>
                     <p class="color-hex">#DC2626</p>
-                    <p class="color-usage"><strong>Uso:</strong> Erros, ações destrutivas, alertas</p>
+                    <p class="color-rgb">RGB: 220, 38, 38</p>
+                    <p class="color-usage">Erros críticos, alertas de segurança, exclusões.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: Tipografia -->
+        <!-- ── 5. Tipografia ──────────────────────────────── -->
         <section id="tipografia" class="content-section">
             <h2 class="section-title">Tipografia</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    A tipografia Inter foi escolhida por sua geometria moderna, excelente legibilidade em telas e ampla gama de pesos disponíveis.
+                    A família tipográfica oficial do SOU Portal é a <strong>Inter</strong> (Google Fonts), utilizada em toda a interface do sistema. A Inter foi escolhida por sua excelente legibilidade em telas, suporte a múltiplos pesos e caráter neutro e profissional.
                 </p>
             </div>
 
-            <h3 class="subsection-title">Família Tipográfica</h3>
-            
             <div class="typography-showcase">
-                <div class="typography-sample" style="font-weight: 700; font-size: 48px;">
-                    <span class="sample-text">Aa Bb Cc Dd Ee</span>
+                <div class="typography-sample">
+                    <span class="sample-text" style="font-size:48px;font-weight:700;">Aa Bb Cc Dd Ee</span>
                     <div class="sample-info">
-                        <h4 class="sample-title">Inter Bold (700)</h4>
-                        <p class="sample-usage"><strong>Uso:</strong> Títulos principais (H1, H2) que necessitam de destaque</p>
+                        <p class="sample-title">Inter Bold — 700</p>
+                        <p class="sample-usage">Títulos principais, seções de destaque, cabeçalhos de nível 1.</p>
                     </div>
                 </div>
-
-                <div class="typography-sample" style="font-weight: 600; font-size: 36px;">
-                    <span class="sample-text">Aa Bb Cc Dd Ee</span>
+                <div class="typography-sample">
+                    <span class="sample-text" style="font-size:36px;font-weight:600;">Ff Gg Hh Ii Jj Kk</span>
                     <div class="sample-info">
-                        <h4 class="sample-title">Inter SemiBold (600)</h4>
-                        <p class="sample-usage"><strong>Uso:</strong> Subtítulos (H3, H4) que organizam o conteúdo</p>
+                        <p class="sample-title">Inter SemiBold — 600</p>
+                        <p class="sample-usage">Subtítulos, labels de formulários, títulos de cards.</p>
                     </div>
                 </div>
-
-                <div class="typography-sample" style="font-weight: 400; font-size: 24px;">
-                    <span class="sample-text">Aa Bb Cc Dd Ee</span>
+                <div class="typography-sample">
+                    <span class="sample-text" style="font-size:24px;font-weight:400;">Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu</span>
                     <div class="sample-info">
-                        <h4 class="sample-title">Inter Regular (400)</h4>
-                        <p class="sample-usage"><strong>Uso:</strong> Corpo de texto, parágrafos e descrições</p>
+                        <p class="sample-title">Inter Regular — 400</p>
+                        <p class="sample-usage">Corpo de texto, descrições, parágrafos gerais.</p>
                     </div>
                 </div>
-
-                <div class="typography-sample" style="font-weight: 300; font-size: 18px;">
-                    <span class="sample-text">Aa Bb Cc Dd Ee</span>
+                <div class="typography-sample">
+                    <span class="sample-text" style="font-size:20px;font-weight:300;">Vv Ww Xx Yy Zz — 0123456789</span>
                     <div class="sample-info">
-                        <h4 class="sample-title">Inter Light (300)</h4>
-                        <p class="sample-usage"><strong>Uso:</strong> Legendas, taglines e textos secundários</p>
+                        <p class="sample-title">Inter Light — 300</p>
+                        <p class="sample-usage">Taglines, legendas, textos auxiliares e notas de rodapé.</p>
                     </div>
                 </div>
             </div>
 
             <h3 class="subsection-title">Hierarquia Tipográfica</h3>
-            
-            <div class="content-card">
-                <table class="typography-table">
-                    <thead>
-                        <tr>
-                            <th>Elemento</th>
-                            <th>Tamanho</th>
-                            <th>Peso</th>
-                            <th>Uso</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Display</strong></td>
-                            <td>48-56px</td>
-                            <td>Bold (700)</td>
-                            <td>Títulos de página, hero sections</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Heading 1</strong></td>
-                            <td>36px</td>
-                            <td>Bold (700)</td>
-                            <td>Títulos principais de seção</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Heading 2</strong></td>
-                            <td>24px</td>
-                            <td>SemiBold (600)</td>
-                            <td>Subtítulos, cards principais</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Heading 3</strong></td>
-                            <td>18px</td>
-                            <td>SemiBold (600)</td>
-                            <td>Subtítulos secundários</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Body</strong></td>
-                            <td>14-16px</td>
-                            <td>Regular (400)</td>
-                            <td>Texto padrão de interface</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Caption</strong></td>
-                            <td>12px</td>
-                            <td>Regular (400)</td>
-                            <td>Legendas, metadados</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table class="typography-table">
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Tamanho</th>
+                        <th>Peso</th>
+                        <th>Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>H1 — Título Principal</td><td>48px</td><td>700 Bold</td><td>Títulos de página, hero sections</td></tr>
+                    <tr><td>H2 — Título de Seção</td><td>36px</td><td>700 Bold</td><td>Seções do manual, módulos do sistema</td></tr>
+                    <tr><td>H3 — Subtítulo</td><td>24px</td><td>600 SemiBold</td><td>Subseções, títulos de cards</td></tr>
+                    <tr><td>H4 — Título de Card</td><td>20px</td><td>600 SemiBold</td><td>Títulos internos de componentes</td></tr>
+                    <tr><td>Body — Corpo</td><td>16px</td><td>400 Regular</td><td>Texto corrido, descrições</td></tr>
+                    <tr><td>Small — Auxiliar</td><td>14px</td><td>400 Regular</td><td>Labels, metadados, notas</td></tr>
+                    <tr><td>Caption — Legenda</td><td>12px</td><td>300 Light</td><td>Legendas de imagens, rodapés</td></tr>
+                </tbody>
+            </table>
         </section>
 
-        <!-- Section 6: Tom de Voz -->
+        <!-- ── 6. Tom de Voz ──────────────────────────────── -->
         <section id="tom-de-voz" class="content-section">
             <h2 class="section-title">Tom de Voz</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    O tom de voz do SOU Portal é profissional, transparente e organizado, refletindo a promessa de unificação e clareza do sistema.
+                    O tom de voz do SOU Portal é <strong>profissional, transparente e organizado</strong>, refletindo a promessa de unificação e clareza do sistema. Toda comunicação deve transmitir confiança e competência institucional.
                 </p>
             </div>
 
             <div class="tone-grid">
                 <div class="tone-card tone-positive">
                     <h3 class="tone-title">✓ Profissional e Confiável</h3>
-                    <p class="tone-description">
-                        Linguagem formal e técnica quando apropriado, transmitindo expertise e seriedade institucional.
-                    </p>
+                    <p class="tone-description">Linguagem formal e técnica quando apropriado, transmitindo expertise e seriedade institucional.</p>
                 </div>
-
                 <div class="tone-card tone-positive">
                     <h3 class="tone-title">✓ Claro e Objetivo</h3>
-                    <p class="tone-description">
-                        Mensagens diretas e sem ambiguidades. Priorizar clareza sobre criatividade em contextos técnicos.
-                    </p>
+                    <p class="tone-description">Mensagens diretas e sem ambiguidades. Priorizar clareza sobre criatividade em contextos técnicos.</p>
                 </div>
-
                 <div class="tone-card tone-positive">
                     <h3 class="tone-title">✓ Transparente e Acessível</h3>
-                    <p class="tone-description">
-                        Explicações quando necessário, sem presumir conhecimento técnico avançado do usuário.
-                    </p>
+                    <p class="tone-description">Explicações quando necessário, sem presumir conhecimento técnico avançado do usuário.</p>
                 </div>
-
                 <div class="tone-card tone-positive">
                     <h3 class="tone-title">✓ Organizado e Estruturado</h3>
-                    <p class="tone-description">
-                        Informações apresentadas de forma hierárquica e lógica, refletindo a promessa de organização.
-                    </p>
+                    <p class="tone-description">Informações apresentadas de forma hierárquica e lógica, refletindo a promessa de organização.</p>
                 </div>
             </div>
 
             <h3 class="subsection-title">O que Evitamos</h3>
-            
             <div class="tone-grid">
                 <div class="tone-card tone-negative">
                     <h3 class="tone-title">✗ Linguagem informal ou casual</h3>
-                    <p class="tone-description">
-                        Mantemos postura profissional e séria, evitando gírias ou emojis excessivos.
-                    </p>
+                    <p class="tone-description">Mantemos postura profissional e séria, evitando gírias ou emojis excessivos.</p>
                 </div>
-
                 <div class="tone-card tone-negative">
                     <h3 class="tone-title">✗ Jargões técnicos sem explicação</h3>
-                    <p class="tone-description">
-                        Quando usar termos técnicos, fornecemos contexto ou explicações claras.
-                    </p>
+                    <p class="tone-description">Quando usar termos técnicos, fornecemos contexto ou explicações claras.</p>
                 </div>
-
                 <div class="tone-card tone-negative">
                     <h3 class="tone-title">✗ Mensagens ambíguas</h3>
-                    <p class="tone-description">
-                        Evitamos comunicação vaga ou que possa gerar múltiplas interpretações.
-                    </p>
+                    <p class="tone-description">Evitamos comunicação vaga ou que possa gerar múltiplas interpretações.</p>
                 </div>
-
                 <div class="tone-card tone-negative">
                     <h3 class="tone-title">✗ Comunicação desorganizada</h3>
-                    <p class="tone-description">
-                        Nunca apresentamos informações de forma caótica ou sem estrutura lógica.
-                    </p>
+                    <p class="tone-description">Nunca apresentamos informações de forma caótica ou sem estrutura lógica.</p>
                 </div>
             </div>
 
             <h3 class="subsection-title">Exemplos Práticos</h3>
-            
             <div class="examples-grid">
                 <div class="example-card example-correct">
                     <div class="example-label">✓ Correto</div>
-                    <p class="example-text">
-                        "O contrato foi atualizado com sucesso. A nova versão (v1.2) está disponível para visualização e download. Consulte o histórico de versões para comparar alterações."
-                    </p>
+                    <p class="example-text">"O contrato foi atualizado com sucesso. A nova versão (v1.2) está disponível para visualização e download. Consulte o histórico de versões para comparar alterações."</p>
                 </div>
-
                 <div class="example-card example-incorrect">
                     <div class="example-label">✗ Incorreto</div>
-                    <p class="example-text">
-                        "Opa! Seu contrato foi atualizado! 🎉 Dá uma olhada na nova versão!"
-                    </p>
+                    <p class="example-text">"Opa! Seu contrato foi atualizado! 🎉 Dá uma olhada na nova versão!"</p>
                 </div>
-
                 <div class="example-card example-correct">
                     <div class="example-label">✓ Correto</div>
-                    <p class="example-text">
-                        "Fase 1 do cronograma concluída. Próximo marco: Entrega do MVP (previsão: 12 semanas)."
-                    </p>
+                    <p class="example-text">"Fase 1 do cronograma concluída. Próximo marco: Entrega do MVP (previsão: 12 semanas)."</p>
                 </div>
-
                 <div class="example-card example-incorrect">
                     <div class="example-label">✗ Incorreto</div>
-                    <p class="example-text">
-                        "Conseguimos! Fase 1 finalizada! 🚀 Bora para a próxima!"
-                    </p>
+                    <p class="example-text">"Conseguimos! Fase 1 finalizada! 🚀 Bora para a próxima!"</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 7: Variações e Aplicações -->
+        <!-- ── 7. Variações e Aplicações ──────────────────── -->
         <section id="variacoes" class="content-section">
             <h2 class="section-title">Variações e Aplicações</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
                     O SOU Portal possui diversas variações de logo para diferentes aplicações e formatos. Escolha a versão mais adequada para cada tipo de material e contexto de uso.
@@ -513,105 +484,112 @@
             </div>
 
             <h3 class="subsection-title">Versões do Logotipo</h3>
-            
             <div class="variations-showcase">
-                <img src="assets/logo_sou_variations_correct.png" alt="Variações do Logo SOU" class="variations-image">
+                <img src="assets/logo_variations_v3.png" alt="Variações do Logo SOU v3.0" class="variations-image">
             </div>
 
             <div class="variations-grid">
                 <div class="variation-card">
-                    <h4 class="variation-title">1. Horizontal</h4>
-                    <p class="variation-description">
-                        Versão principal para cabeçalhos, assinaturas de e-mail e apresentações.
-                    </p>
+                    <h4 class="variation-title">1. Horizontal (Principal)</h4>
+                    <p class="variation-description">Versão principal para cabeçalhos, assinaturas de e-mail e apresentações. Ícone à esquerda, tipografia à direita.</p>
                 </div>
-
                 <div class="variation-card">
                     <h4 class="variation-title">2. Vertical</h4>
-                    <p class="variation-description">
-                        Formato vertical para aplicações em espaços estreitos ou quadrados.
-                    </p>
+                    <p class="variation-description">Formato vertical para aplicações em espaços estreitos ou quadrados. Ícone acima, tipografia abaixo.</p>
                 </div>
-
                 <div class="variation-card">
                     <h4 class="variation-title">3. Ícone Isolado</h4>
-                    <p class="variation-description">
-                        Apenas os quadrados concêntricos para favicons, ícones de aplicativos.
-                    </p>
+                    <p class="variation-description">Apenas os quadrados concêntricos para favicons, ícones de aplicativos e avatares de perfil.</p>
                 </div>
-
                 <div class="variation-card">
                     <h4 class="variation-title">4. Monocromático Preto</h4>
-                    <p class="variation-description">
-                        Versão em preto para impressão monocromática ou aplicações P&B.
-                    </p>
+                    <p class="variation-description">Versão em preto para impressão monocromática, documentos P&B ou aplicações de baixo contraste.</p>
                 </div>
-
                 <div class="variation-card">
-                    <h4 class="variation-title">5. Monocromático Branco</h4>
-                    <p class="variation-description">
-                        Versão branca para fundos escuros ou coloridos.
-                    </p>
+                    <h4 class="variation-title">5. Versão Branca</h4>
+                    <p class="variation-description">Versão branca para fundos escuros, azuis ou coloridos. Manter contraste mínimo de 4.5:1.</p>
+                </div>
+            </div>
+
+            <h3 class="subsection-title">Aplicações Digitais</h3>
+            <div class="mockup-showcase">
+                <img src="assets/mockup_digital_v3.png" alt="Mockup Digital SOU v3.0" class="mockup-image">
+            </div>
+
+            <div class="digital-grid">
+                <div class="digital-card">
+                    <div class="digital-preview" style="background:#F5F5F5;display:flex;align-items:center;justify-content:center;height:120px;border-radius:8px;">
+                        <img src="assets/logo_principal_v3.png" alt="Header" style="max-width:200px;height:auto;">
+                    </div>
+                    <h4 class="digital-title">Header da Aplicação</h4>
+                    <p class="digital-description">Logo horizontal, altura máxima 48px no header. Fundo branco ou azul escuro.</p>
+                </div>
+                <div class="digital-card">
+                    <div class="digital-preview" style="background:#004494;display:flex;align-items:center;justify-content:center;height:120px;border-radius:8px;">
+                        <img src="assets/logo_principal_v3.png" alt="Fundo escuro" style="max-width:180px;height:auto;filter:brightness(10);">
+                    </div>
+                    <h4 class="digital-title">Fundo Escuro</h4>
+                    <p class="digital-description">Usar versão branca do logo em fundos azuis ou escuros. Nunca usar versão colorida sobre fundo escuro.</p>
+                </div>
+                <div class="digital-card">
+                    <div class="digital-preview" style="background:#0056B3;display:flex;align-items:center;justify-content:center;height:120px;border-radius:8px;">
+                        <div style="background:white;border-radius:12px;padding:12px;display:flex;align-items:center;justify-content:center;">
+                            <img src="assets/logo_principal_v3.png" alt="Favicon" style="width:64px;height:64px;object-fit:contain;">
+                        </div>
+                    </div>
+                    <h4 class="digital-title">Favicon / App Icon</h4>
+                    <p class="digital-description">Ícone isolado: 16×16, 32×32, 48×48, 64×64, 512×512px. Formatos: ICO, PNG, SVG.</p>
                 </div>
             </div>
 
             <h3 class="subsection-title">Aplicações em Papelaria</h3>
-            
-            <div class="applications-showcase">
-                <img src="assets/stationery_mockup.png" alt="Mockup de Papelaria SOU" class="applications-image">
-            </div>
-
             <div class="content-card">
                 <h4 class="card-title">Especificações Técnicas</h4>
                 <ul class="specs-list">
-                    <li><strong>Cartão de Visita:</strong> 90mm x 50mm, couché 300g fosco, impressão 4x4 cores</li>
-                    <li><strong>Papel Timbrado:</strong> A4 (210x297mm), sulfite 90g branco, logo no cabeçalho</li>
-                    <li><strong>Envelope:</strong> 114mm x 162mm (C6), sulfite 90g branco, logo no canto superior esquerdo</li>
+                    <li><strong>Cartão de Visita:</strong> 90mm × 50mm, couché 300g fosco, impressão 4×4 cores</li>
+                    <li><strong>Papel Timbrado:</strong> A4 (210×297mm), sulfite 90g branco, logo no cabeçalho superior esquerdo</li>
+                    <li><strong>Envelope:</strong> 114mm × 162mm (C6), sulfite 90g branco, logo no canto superior esquerdo</li>
+                    <li><strong>Assinatura de E-mail:</strong> Logo horizontal, máx. 200px de largura, formato PNG com fundo transparente</li>
+                    <li><strong>Apresentações:</strong> Logo no canto superior esquerdo ou centralizado no slide de capa</li>
                 </ul>
             </div>
 
-            <h3 class="subsection-title">Aplicações Digitais</h3>
-            
-            <div class="digital-grid">
-                <div class="digital-card">
-                    <div class="digital-preview">
-                        <img src="assets/social_media_profile.png" alt="Avatar Redes Sociais" class="digital-image">
+            <h3 class="subsection-title">Usos Incorretos</h3>
+            <div class="dont-grid">
+                <div class="dont-card">
+                    <div class="dont-preview" style="background:#f8f8f8;padding:16px;border-radius:8px;text-align:center;">
+                        <img src="assets/logo_principal_v3.png" alt="Não distorcer" style="width:160px;transform:scaleX(1.4);opacity:0.7;">
                     </div>
-                    <h4 class="digital-title">Redes Sociais</h4>
-                    <p class="digital-description">
-                        Avatar de perfil: 400x400px mínimo, ícone dos quadrados concêntricos em formato quadrado.
-                    </p>
+                    <p class="dont-label">✗ Não distorcer proporções</p>
                 </div>
-
-                <div class="digital-card">
-                    <div class="digital-preview" style="background: #0056B3; display: flex; align-items: center; justify-content: center; height: 120px;">
-                        <img src="assets/logo_sou_v2.png" alt="Favicon" style="width: 64px; height: 64px;">
+                <div class="dont-card">
+                    <div class="dont-preview" style="background:#f8f8f8;padding:16px;border-radius:8px;text-align:center;">
+                        <img src="assets/logo_principal_v3.png" alt="Não rotacionar" style="width:160px;transform:rotate(15deg);opacity:0.7;">
                     </div>
-                    <h4 class="digital-title">Favicon</h4>
-                    <p class="digital-description">
-                        Ícone isolado: 16x16, 32x32, 48x48, 64x64px. Formatos: ICO, PNG, SVG.
-                    </p>
+                    <p class="dont-label">✗ Não rotacionar o logo</p>
                 </div>
-
-                <div class="digital-card">
-                    <div class="digital-preview" style="background: linear-gradient(135deg, #0056B3 0%, #004494 100%); display: flex; align-items: center; justify-content: center; height: 120px;">
-                        <img src="assets/logo_correct.png" alt="Open Graph" style="max-width: 200px;">
+                <div class="dont-card">
+                    <div class="dont-preview" style="background:#DC2626;padding:16px;border-radius:8px;text-align:center;">
+                        <img src="assets/logo_principal_v3.png" alt="Não usar em fundos inadequados" style="width:160px;opacity:0.7;">
                     </div>
-                    <h4 class="digital-title">Open Graph</h4>
-                    <p class="digital-description">
-                        Imagem social: 1200x630px, logo completo centralizado com tagline.
-                    </p>
+                    <p class="dont-label">✗ Não usar em fundos coloridos inadequados</p>
+                </div>
+                <div class="dont-card">
+                    <div class="dont-preview" style="background:#f8f8f8;padding:16px;border-radius:8px;text-align:center;">
+                        <img src="assets/logo_principal_v3.png" alt="Não aplicar sombra" style="width:160px;filter:drop-shadow(4px 4px 8px rgba(0,0,0,0.5));opacity:0.7;">
+                    </div>
+                    <p class="dont-label">✗ Não aplicar sombras ou efeitos</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 8: Downloads -->
+        <!-- ── 8. Downloads ───────────────────────────────── -->
         <section id="downloads" class="content-section">
             <h2 class="section-title">Downloads</h2>
-            
+
             <div class="content-card">
                 <p class="content-text">
-                    Faça o download dos arquivos oficiais da marca SOU Portal para uso autorizado em materiais institucionais, apresentações e aplicações digitais.
+                    Faça o download dos arquivos oficiais da marca SOU Portal v3.0 para uso autorizado em materiais institucionais, apresentações e aplicações digitais.
                 </p>
             </div>
 
@@ -619,95 +597,72 @@
                 <div class="download-card">
                     <div class="download-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
                         </svg>
                     </div>
-                    <h3 class="download-title">Logotipos</h3>
-                    <p class="download-description">
-                        Todas as variações do logo em PNG (transparente), SVG (vetorial) e PDF (impressão).
-                    </p>
-                    <button class="download-button" onclick="downloadFile('downloads/logos_sou_portal.zip', 'logos_sou_portal.zip')">
-                        Baixar Logotipos
-                    </button>
+                    <h3 class="download-title">Logotipos v3.0</h3>
+                    <p class="download-description">Todas as variações do logo em PNG (transparente), SVG (vetorial) e PDF (impressão).</p>
+                    <button class="download-button" onclick="downloadFile('downloads/logos_sou_portal.zip','logos_sou_portal_v3.zip')">Baixar Logotipos</button>
                 </div>
 
                 <div class="download-card">
                     <div class="download-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                            <polyline points="21 15 16 10 5 21"></polyline>
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
                         </svg>
                     </div>
-                    <h3 class="download-title">Paleta de Cores</h3>
-                    <p class="download-description">
-                        Arquivo ASE (Adobe) e CSS com todas as cores oficiais da marca.
-                    </p>
-                    <button class="download-button" onclick="downloadFile('downloads/paleta_cores_sou.zip', 'paleta_cores_sou.zip')">
-                        Baixar Paleta
-                    </button>
+                    <h3 class="download-title">Paleta de Cores v3.0</h3>
+                    <p class="download-description">Arquivo CSS e JSON com todas as cores oficiais, incluindo o novo Azul Navy #0D1F3C.</p>
+                    <button class="download-button" onclick="downloadFile('downloads/paleta_cores_sou.zip','paleta_cores_sou_v3.zip')">Baixar Paleta</button>
                 </div>
 
                 <div class="download-card">
                     <div class="download-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
                         </svg>
                     </div>
-                    <h3 class="download-title">Manual Completo</h3>
-                    <p class="download-description">
-                        Manual da marca em PDF com todas as diretrizes e especificações técnicas.
-                    </p>
-                    <button class="download-button" onclick="alert('Manual PDF em desenvolvimento. Por favor, use os outros downloads disponíveis.')">
-                        Baixar Manual PDF
-                    </button>
+                    <h3 class="download-title">Ativos Digitais</h3>
+                    <p class="download-description">Favicon, avatar circular 512×512px e Open Graph 1200×630px atualizados para v3.0.</p>
+                    <button class="download-button" onclick="downloadFile('downloads/assets_digitais_sou.zip','assets_digitais_sou_v3.zip')">Baixar Ativos</button>
                 </div>
 
                 <div class="download-card">
                     <div class="download-icon">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16 18 22 12 16 6"></polyline>
-                            <polyline points="8 6 2 12 8 18"></polyline>
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
                         </svg>
                     </div>
-                    <h3 class="download-title">Assets Digitais</h3>
-                    <p class="download-description">
-                        Favicons, avatares para redes sociais e imagens Open Graph prontas para uso.
-                    </p>
-                    <button class="download-button" onclick="downloadFile('downloads/assets_digitais_sou.zip', 'assets_digitais_sou.zip')">
-                        Baixar Assets
-                    </button>
+                    <h3 class="download-title">Manual Completo PDF</h3>
+                    <p class="download-description">Manual da marca completo em PDF para distribuição interna e referência offline.</p>
+                    <button class="download-button" onclick="window.print()">Imprimir / Salvar PDF</button>
                 </div>
             </div>
 
-            <div class="content-card" style="margin-top: 48px;">
-                <h3 class="card-title">Solicitação de Arquivos Adicionais</h3>
-                <p class="content-text">
-                    Para solicitar arquivos de marca em formatos específicos ou esclarecer dúvidas sobre aplicações, entre em contato com:
-                </p>
-                <p class="content-text" style="margin-top: 16px;">
-                    <strong>Gestão do Projeto SOU</strong><br>
-                    E-mail: projeto@administradoramutual.com.br
-                </p>
+            <div class="update-banner" style="margin-top:32px;">
+                <div class="update-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                </div>
+                <div class="update-content">
+                    <strong>Versão 3.0 — Maio 2025:</strong> Logo atualizado com tipografia display arredondada. Novo Azul Navy (#0D1F3C) adicionado à paleta. Todos os ativos digitais regenerados.
+                </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="main-footer">
-            <div class="footer-content">
-                <p class="footer-copyright">© 2025 Administradora Mutual. Todos os direitos reservados.</p>
-                <p class="footer-version">Manual da Marca SOU Portal - Versão 2.0 | Dezembro 2025</p>
-            </div>
-        </footer>
     </main>
 
-    <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
 </html>
